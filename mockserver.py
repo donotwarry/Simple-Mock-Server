@@ -31,7 +31,6 @@ class Index:
     # pdb.set_trace()
     return render.index(rules, logs)
 
-
 class Submit:
     def POST(self):
         i = web.input()
@@ -49,6 +48,12 @@ class Clear:
 
 class Mock:
     def GET(self):
+        return self.mock()
+
+    def POST(self):
+        return self.mock()
+
+    def mock(self):
         i = web.input()
         resp = None
         # check mock rules
@@ -80,6 +85,7 @@ class Mock:
         log += '================log end================='
         stringUtils.writeLogs(log)
         return resp
+
 
 
 class StringUtils:
