@@ -1,6 +1,6 @@
 # coding=utf-8
 # 
-# API Mock Server (version 1.0.1 2013.12)
+# API Mock Server (version 1.0.2 2013.12)
 # 
 # @author:dengjun86@gmail.com
 
